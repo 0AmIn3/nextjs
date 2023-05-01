@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  font-family: 'Heebo';
+}
+.bor{
+  border: 1px solid red;
+  border-radius: 8px;
+}
+.bor2{
+  border-bottom: 1px solid gainsboro;
+}
+.tran{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.bor3{
+  border-right: 1px solid gainsboro;
+
+}
+.aa{
+  object-fit: none;
+}
+.jj{
+
+  overflow-x: scroll;
+ 
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  p{
+    white-space: nowrap;
+    cursor: pointer;
+    height: 100%;
+    padding: 12px 0;
+    &:hover{
+      background-color: rgba(128, 128, 128, 0.066);
+    }
+  }
+}
+
+.active{
+  color: royalblue;
+  border-bottom: 1px solid royalblue;
+  transition: 0.5s ease;
+}
+/* 
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
